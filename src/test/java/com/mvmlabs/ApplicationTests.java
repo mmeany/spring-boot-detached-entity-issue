@@ -19,7 +19,6 @@ public class ApplicationTests {
         
     @Test
     public void versionNullCausesAnExceptionOnUpdate() throws Exception {
-        System.out.println("************* 0 - MVM *********** Have transaction");
         User user = new User();
         user.setUsername("Version Null");
         user.setNumberOfVisits(0);
@@ -34,7 +33,6 @@ public class ApplicationTests {
     
     @Test
     public void versionZeroCausesExceptionOnUpdate() throws Exception {
-        System.out.println("************* 1 - MVM *********** Have transaction");
         User user = new User();
         user.setUsername("Version Zero");
         user.setNumberOfVisits(0);
@@ -49,7 +47,6 @@ public class ApplicationTests {
     
     @Test
     public void versionOneDoesNotCausesExceptionOnUpdate() throws Exception {
-        System.out.println("************* 2 - MVM *********** Have transaction");
         User user = new User();
         user.setUsername("Version One");
         user.setNumberOfVisits(0);
@@ -64,7 +61,6 @@ public class ApplicationTests {
     
     @Test
     public void versionOneDoesNotCausesExceptionWithMultipleUpdates() throws Exception {
-        System.out.println("************* 3 - MVM *********** Have transaction");
         User user = new User();
         user.setUsername("Version One Multiple");
         user.setNumberOfVisits(0);
